@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Михаил Жуков](https://up.htmlacademy.ru/adaptive/26/user/1997271).
-* Наставник: `Неизвестно`.
+- Студент: [Михаил Жуков](https://up.htmlacademy.ru/adaptive/26/user/1997271).
+- Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
