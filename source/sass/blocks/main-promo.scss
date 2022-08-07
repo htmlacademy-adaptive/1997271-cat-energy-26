@@ -1,0 +1,30 @@
+.main-promo {
+  padding-top: 27px;
+  margin-bottom: 20px;
+  background-image: url("../img/promo-cat.png");
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
+}
+
+.main-promo__title {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: $color-default-white;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  width: 251px;
+  margin-bottom: 25px;
+}
+
+.main-promo__slogan {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-default-white;
+  padding: 0;
+  width: 198px;
+  margin-bottom: 29px;
+}

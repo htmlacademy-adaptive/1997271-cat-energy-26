@@ -1,0 +1,32 @@
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-nero;
+  width: 76px;
+  margin-bottom: 18px;
+}
+
+.product__content {
+  width: 142px;
+  margin: 0;
+  font-family: $Arial;
+}
+
+.product__name {
+  margin: 0;
+}
+
+.product__value {
+  margin: 0;
+}
+
+.product__information {
+  margin-bottom: 13px;
+}

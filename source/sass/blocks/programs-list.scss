@@ -1,0 +1,82 @@
+.programs-list {
+  margin-bottom: 20px;
+}
+
+.programs-list__item {
+  background-color: $color-white-smoke;
+  padding: 24px 20px 18px 20px;
+  margin-bottom: 20px;
+}
+
+.programs-list__picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  position: relative;
+}
+
+.programs-list__picture--slim::after {
+  content: "";
+  background-image: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  bottom: 3px;
+  left: 7px;
+}
+
+.programs-list__picture--weight-gain::after {
+  content: "";
+  background-image: url("../img/cat-weight-gain.svg");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: -10px;
+}
+
+.programs-list__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs-list__specification {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  padding-bottom: 20px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid $color-gainsboro;
+  font-family: $Arial;
+}
+
+.programs-list__link {
+  display: inline-flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-default-black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  position: relative;
+  padding-right: 47px;
+}
+
+.programs-list__link::after {
+  content: "";
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}

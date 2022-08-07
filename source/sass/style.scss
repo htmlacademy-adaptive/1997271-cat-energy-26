@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+//-----Глобальные стили------//
+@import "variables";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+//-------Блоки--------//
+
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/main-promo.scss";
+@import "blocks/button";
+@import "blocks/programs-list";
+@import "blocks/guide";
+@import "blocks/example";
+@import "blocks/collaboration";
+@import "blocks/footer";
+@import "blocks/catalog";
+@import "blocks/additional-products";
+@import "blocks/main-form";
+@import "blocks/product";
