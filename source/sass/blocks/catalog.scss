@@ -25,41 +25,8 @@
   margin-bottom: 19px;
 }
 
-.product__link {
-  text-decoration: none;
-}
-
-.product__title {
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #222222;
-  width: 76px;
-  margin-bottom: 18px;
-}
-
-.product__content {
-  width: 142px;
-  margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
-}
-
-.product__name {
-  margin: 0;
-}
-
-.product__value {
-  margin: 0;
-}
-
-.product__information {
-  margin-bottom: 13px;
-}
-
 .catalog__button {
-  background-color: #f2f2f2;
+  background-color: $color-white-smoke;
   color: #444444;
 }
 
@@ -71,7 +38,7 @@
 }
 
 .catalog__subtitle-more {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $Arial;
   font-size: 12px;
   text-align: center;
 }

@@ -1,9 +1,9 @@
 .button {
   display: block;
   width: 280px;
-  color: #ffffff;
-  font-family: "Oswald", "Arial", sans-serif;
-  background-color: #68b738;
+  color: $color-default-white;
+  font-family: $Oswald;
+  background-color: $color-apple;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;

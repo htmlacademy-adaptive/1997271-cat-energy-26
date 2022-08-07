@@ -31,7 +31,7 @@
 
 .additional-products__unit {
   margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $Arial;
   line-height: 14px;
 }
 
@@ -42,7 +42,7 @@
 .additional-products__gift {
   background-image: url("../img/catalog/gift.png");
   background-repeat: no-repeat;
-  background-color: #68b738;
+  background-color: $color-apple;
   background-position: center;
   width: 100%;
   min-height: 290px;
@@ -51,11 +51,11 @@
 
 .additional-products__description {
   margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $Arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: $color-default-white;
   width: 161px;
 }
