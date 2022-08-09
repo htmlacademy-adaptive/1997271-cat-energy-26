@@ -1,11 +1,32 @@
 .programs-list {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.program-list__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .programs-list__item {
   background-color: $color-white-smoke;
   padding: 24px 20px 18px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 51px 59px 52px;
+  }
 }
 
 .programs-list__picture {
@@ -14,28 +35,16 @@
   border-radius: 50%;
   background-color: #68b738;
   position: relative;
-}
 
-.programs-list__picture--slim::after {
-  content: "";
-  background-image: url("../img/cat-slim.svg");
-  background-repeat: no-repeat;
-  width: 36px;
-  height: 50px;
-  position: absolute;
-  bottom: 3px;
-  left: 7px;
-}
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
 
-.programs-list__picture--weight-gain::after {
-  content: "";
-  background-image: url("../img/cat-weight-gain.svg");
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 28px;
-  position: absolute;
-  top: 11px;
-  left: -10px;
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .programs-list__title {
@@ -45,6 +54,11 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs-list__specification {
@@ -53,8 +67,12 @@
   color: #444444;
   padding-bottom: 20px;
   margin-bottom: 19px;
-  border-bottom: 1px solid $color-gainsboro;
   font-family: $Arial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programs-list__link {
@@ -66,17 +84,24 @@
   font-size: 16px;
   line-height: 16px;
   position: relative;
-  padding-right: 47px;
+  padding-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .programs-list__link::after {
   content: "";
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center right;
   width: 24px;
   height: 12px;
   position: absolute;
-  top: 2px;
-  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -28px;
 }

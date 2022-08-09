@@ -1,5 +1,16 @@
 .collaboration__item {
-  padding: 26px 20px;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0 58px 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-default-white;
+    position: absolute;
+  }
 }
 
 .collaboration__item--grey {
@@ -12,13 +23,32 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  width: 139px;
+  max-width: 139px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .collaboration__adress {
-  width: 139px;
+  max-width: 139px;
   font-family: $Arial;
   font-style: normal;
   line-height: 20px;
   color: $color-charcoal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.collaboration__map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 302px;
+  background-size: cover;
 }

@@ -1,9 +1,27 @@
 .main-promo {
   padding-top: 27px;
   margin-bottom: 20px;
-  background-image: url("../img/promo-cat.png");
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-default-white;
+  }
+}
+
+.main-promo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 302px;
+  top: 0;
+  background-image: linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+    ),
+    url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: cover;
+  z-index: -1;
 }
 
 .main-promo__title {
@@ -14,8 +32,14 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  width: 251px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 440px;
+    color: $color-default-black;
+  }
 }
 
 .main-promo__slogan {
@@ -27,4 +51,12 @@
   padding: 0;
   width: 198px;
   margin-bottom: 29px;
+}
+
+.main-promo__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    max-width: 244px;
+    left: 80;
+  }
 }

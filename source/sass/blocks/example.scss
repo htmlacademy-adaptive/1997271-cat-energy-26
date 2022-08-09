@@ -1,7 +1,20 @@
 .example {
   background-color: $color-white-smoke;
   padding-top: 25px;
-  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    background-color: $color-default-white;
+  }
+}
+
+.example_wrapper {
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 0 75px 0;
+  }
 }
 
 .example__title {
@@ -11,7 +24,12 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
-  width: 195px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
 }
 
 .example__description {
@@ -19,14 +37,62 @@
   margin: 0;
   padding: 0;
   color: $color-charcoal;
-  width: 280px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+}
+
+.example__stats {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.example__stats-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.example__stats-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .example__stats-value {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__stats-subtitle {
@@ -34,29 +100,34 @@
   font-size: 12px;
   line-height: 12px;
   color: $color-charcoal;
-}
 
-.example__stats-list {
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__stats-price {
-  width: 188px;
-  margin: 0 auto;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .example__demo-images--skinny {
   display: none;
 }
 
-.example__demo-slider {
-  margin: 0 auto;
-  width: 224px;
+.example__demo {
+  @media (min-width: $tablet-width) {
+    background: $color-white-smoke;
+  }
 }
 
 .example__demo-button {

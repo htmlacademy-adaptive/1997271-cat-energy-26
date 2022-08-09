@@ -11,16 +11,27 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid $color-gainsboro;
-  border-top: 1px solid $color-gainsboro;
-  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-item {
+  padding: 10px;
 }
 
 .footer__developer-link {
   text-decoration: none;
   color: $color-charcoal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .footer__developer-title {
@@ -30,4 +41,20 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.footer__logo-link {
+  display: block;
+  padding: 39px 0 32px 0;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
