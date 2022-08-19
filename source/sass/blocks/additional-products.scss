@@ -1,5 +1,10 @@
 .additional-products {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
 }
 
 .additional-products__title {
@@ -12,6 +17,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 91px;
   }
 }
 
@@ -31,6 +37,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -57,6 +67,11 @@
   line-height: 16px;
   margin-bottom: 13px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__unit {
@@ -91,5 +106,4 @@
   line-height: 20px;
   text-align: center;
   color: $color-default-white;
-  width: 161px;
 }

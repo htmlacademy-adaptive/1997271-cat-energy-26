@@ -9,12 +9,14 @@
 
   @media (min-width: $desktop-width) {
     background-color: $color-default-white;
-    position: absolute;
+    max-width: 564px;
+    position: relative;
+    z-index: 2;
   }
 }
 
-.collaboration__item--grey {
-  background-color: $color-white-smoke;
+.collaboration {
+  background-color: $color-default-white;
 }
 
 .collaboration__title {
@@ -45,10 +47,25 @@
   }
 }
 
+.collaboration__wrapper {
+  position: relative;
+  background-color: $color-default-white;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 107px;
+  }
+}
+
+.collaboration__wrapper--grey {
+  background-color: $color-white-smoke;
+}
+
 .collaboration__map {
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 302px;
-  background-size: cover;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    max-height: 400px;
+    width: 100%;
+  }
 }

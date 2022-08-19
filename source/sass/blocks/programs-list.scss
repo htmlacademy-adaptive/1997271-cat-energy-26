@@ -11,13 +11,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 80px;
-    margin-bottom: 71px;
+    margin-bottom: 51px;
   }
 }
 
 .programs-list__item {
   background-color: $color-white-smoke;
-  padding: 24px 20px 18px 20px;
+  padding: 24px 20px 22px 20px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 51px 59px 52px;
+    padding: 47px 51px 60px 52px;
   }
 }
 
@@ -58,6 +58,20 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    width: 50%;
+  }
+}
+
+.programs-list__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  align-items: center;
+  margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    gap: 62px;
+    margin-bottom: 39px;
   }
 }
 
@@ -68,10 +82,16 @@
   padding-bottom: 20px;
   margin-bottom: 19px;
   font-family: $Arial;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
   }
 }
 

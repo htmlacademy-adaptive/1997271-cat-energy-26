@@ -5,24 +5,34 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 13px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 26px;
+    padding-top: 36px;
     padding-bottom: 13px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 56px;
     padding-bottom: 13px;
+    z-index: 1;
   }
 }
 
 .header__nav {
+  display: none;
   width: 100%;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
-    width: 534px;
+    width: auto;
+    display: block;
+    margin: 0;
   }
+}
+
+.header__nav--opened {
+  display: block;
 }
 
 .header__nav-list {
@@ -37,33 +47,111 @@
 }
 
 .header__nav-link {
+  display: block;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e6e6e6;
+  margin-left: -20px;
+  margin-right: -20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 10px 19px;
     font-size: 18px;
     font-weight: 400;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
+    color: $color-default-white;
   }
+}
+
+.header__nav-link--current::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 2px;
+    background-color: #ffffff;
+    width: calc(100% - 40px);
+  }
+}
+
+.header__nav-link-catalog--current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  height: 2px;
+  background-color: #68b738;
+  width: calc(100% - 40px);
+}
+
+.header__nav-link-catalog {
+  color: #000000;
 }
 
 .header__burger {
   display: block;
   width: 24px;
   height: 19px;
-  background-color: $color-charcoal;
   border: none;
+  position: relative;
+  background-color: #ffffff;
+
+  &:hover,
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.header__burger--closed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  box-shadow: 0 6.5px 0 0 #000000, 0 13px 0 0 #000000;
+}
+
+.header__burger--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
