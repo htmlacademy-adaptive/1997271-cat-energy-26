@@ -1,21 +1,89 @@
 .main-promo {
   padding-top: 27px;
   margin-bottom: 20px;
-  background-image: url("../img/promo-cat.png");
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-default-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 106px;
+    margin-bottom: 278px;
+    position: static;
+  }
+}
+
+.main-promo__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+    justify-items: start;
+    grid-template-areas:
+      "title"
+      "slogan"
+      "button"
+      "image";
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title image"
+      "slogan image"
+      "button image";
+  }
+}
+
+.main-promo--background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 302px;
+  top: 0;
+  background-color: $color-apple;
+  background-image: linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+    ),
+    url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: cover;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    height: 27%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
 }
 
 .main-promo__title {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
   text-align: center;
   color: $color-default-white;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  width: 251px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 440px;
+    color: $color-default-black;
+    grid-area: title;
+    margin-bottom: 41px;
+    text-align: left;
+  }
 }
 
 .main-promo__slogan {
@@ -25,6 +93,29 @@
   line-height: 14px;
   color: $color-default-white;
   padding: 0;
-  width: 198px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: slogan;
+    color: $color-default-black;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
+}
+
+.main-promo__button {
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+    max-width: 244px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.main-promo__image {
+  @media (min-width: $tablet-width) {
+    grid-area: image;
+  }
 }

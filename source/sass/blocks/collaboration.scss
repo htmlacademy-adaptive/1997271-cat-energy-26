@@ -1,9 +1,22 @@
 .collaboration__item {
-  padding: 26px 20px;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0 58px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-default-white;
+    max-width: 564px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
-.collaboration__item--grey {
-  background-color: $color-white-smoke;
+.collaboration {
+  background-color: $color-default-white;
 }
 
 .collaboration__title {
@@ -12,13 +25,47 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  width: 139px;
+  max-width: 139px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .collaboration__adress {
-  width: 139px;
+  max-width: 139px;
   font-family: $Arial;
   font-style: normal;
   line-height: 20px;
   color: $color-charcoal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.collaboration__wrapper {
+  position: relative;
+  background-color: $color-default-white;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 107px;
+  }
+}
+
+.collaboration__wrapper--grey {
+  background-color: $color-white-smoke;
+}
+
+.collaboration__map {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    max-height: 400px;
+    width: 100%;
+  }
 }
