@@ -1,0 +1,16 @@
+.input {
+  font-family: $Oswald;
+  color: $color-charcoal;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px $color-charcoal;
+    outline: none;
+  }
+}

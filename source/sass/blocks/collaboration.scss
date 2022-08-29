@@ -12,6 +12,7 @@
     max-width: 564px;
     position: relative;
     z-index: 2;
+    padding: 57px 95px 59px 79px;
   }
 }
 
@@ -67,5 +68,14 @@
     top: 0;
     max-height: 400px;
     width: 100%;
+  }
+}
+
+.collaboration__iframe {
+  border: none;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
