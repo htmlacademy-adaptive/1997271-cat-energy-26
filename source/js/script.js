@@ -1,6 +1,8 @@
 let burger = document.querySelector(".header__burger");
 let nav = document.querySelector(".header__nav");
 
+nav.classList.remove("header__nav-no-js");
+
 burger.addEventListener("click", function () {
   if (burger.classList.contains("header__burger--closed")) {
     burger.classList.remove("header__burger--closed");
