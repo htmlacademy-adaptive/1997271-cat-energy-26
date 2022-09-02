@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 39px;
+    padding-bottom: 5%;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,8 +62,8 @@
     margin: 0;
     align-items: flex-start;
     gap: 31px;
-    padding-top: 40px;
-    padding-bottom: 63px;
+    padding-top: 12%;
+    padding-bottom: 20%;
   }
 
   &::before {
@@ -79,6 +79,11 @@
       color: $color-white-smoke;
       z-index: -1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17%;
+    padding-bottom: 25%;
   }
 }
 

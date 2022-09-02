@@ -55,6 +55,60 @@
   }
 }
 
+.programs-list__picture--slim {
+  &::before {
+    content: "";
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    left: 9px;
+    bottom: 3px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/cat-slim-tablet.svg");
+      left: 29px;
+      bottom: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/cat-slim-desktop.svg");
+      left: 15px;
+      bottom: 7px;
+    }
+  }
+}
+
+.programs-list__picture--weight-gain {
+  &::before {
+    content: "";
+    background-image: url("../img/cat-weight-gain.svg");
+    background-repeat: no-repeat;
+    left: -7px;
+    bottom: 10px;
+    width: 67px;
+    height: 28px;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/cat-weight-gain-tablet.svg");
+      width: 268px;
+      height: 112px;
+      left: -35px;
+      bottom: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/cat-weight-gain-desktop.svg");
+      width: 134px;
+      height: 56px;
+      left: -19px;
+      bottom: 25px;
+    }
+  }
+}
+
 .programs-list__title {
   margin: 0;
   padding: 0;
