@@ -17,12 +17,12 @@
   padding: 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
     margin-bottom: 72px;
   }
 
@@ -96,7 +96,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
   }
 
   @media (min-width: $desktop-width) {

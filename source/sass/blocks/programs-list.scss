@@ -173,6 +173,15 @@
   &:active {
     color: rgba($color-default-black, 0.3);
   }
+
+  &:hover {
+    padding-right: 19px;
+    transition: 0.5s ease-out;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 32px;
+    }
+  }
 }
 
 .programs-list__link::after {
@@ -186,4 +195,9 @@
   top: 50%;
   transform: translateY(-50%);
   right: -28px;
+}
+
+.programs-list__link:hover::after {
+  transition: 0.5s ease-out;
+  width: 32px;
 }

@@ -34,12 +34,12 @@
   padding: 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
     margin-bottom: 63px;
   }
 
@@ -58,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     margin-bottom: 53px;
   }
 
@@ -116,13 +116,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
     padding: 14px 29px 21px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 37px;
     padding: 16px 29px 19px;
   }
 }
@@ -131,11 +129,11 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
     text-align: center;
   }
 }
@@ -143,7 +141,7 @@
 .example__stats-subtitle {
   font-family: $Arial;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   color: $color-charcoal;
   position: absolute;
   left: 0;
@@ -159,7 +157,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 1;
     background-color: $color-default-white;
     width: 100%;
   }
@@ -179,12 +177,12 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.43;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

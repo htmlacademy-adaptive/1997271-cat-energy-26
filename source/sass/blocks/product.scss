@@ -20,6 +20,15 @@
   @media (min-width: $desktop-width) {
     margin-top: -34px;
   }
+
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__img {
@@ -43,6 +52,15 @@
     margin-bottom: 6px;
     max-width: 130px;
     align-self: center;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

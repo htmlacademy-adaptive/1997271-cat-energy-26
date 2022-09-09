@@ -161,11 +161,16 @@
   flex-wrap: wrap;
   gap: 0 15px;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     gap: 0 19px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
@@ -272,12 +277,23 @@
   align-items: center;
   flex-direction: row;
   gap: 0 10px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     gap: 0 20px;
   }
+}
+
+.main-form__row-icon-email {
+  position: absolute;
+  right: 20px;
+}
+
+.main-form__row-icon-phone {
+  position: absolute;
+  right: 18px;
 }
 
 .main-form__contacts-input {

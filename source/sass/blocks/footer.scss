@@ -1,4 +1,5 @@
 .footer {
+  margin-top: auto;
   padding-top: 36px;
   padding-bottom: 22px;
   background-color: $color-white-smoke;
@@ -60,6 +61,16 @@
   @media (min-width: $desktop-width) {
     gap: 22px;
   }
+
+  &:hover {
+    svg {
+      fill: $color-apple;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__developer-title {
@@ -103,5 +114,17 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.footer__social-link {
+  &:hover {
+    svg {
+      fill: $color-apple;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -54,15 +54,23 @@
   width: 100%;
   margin-top: 13px;
 
+  .no-js & {
+    display: block;
+  }
+
+  .is-open & {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 70%;
     display: block;
     margin: 0;
   }
-}
 
-.header__nav--opened {
-  display: block;
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .header__nav-list {
@@ -78,14 +86,10 @@
   }
 }
 
-.header__nav-no-js {
-  display: block;
-}
-
 .header__nav-link {
   display: block;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -179,32 +183,22 @@
   border: none;
   position: relative;
   background-color: #ffffff;
+  cursor: pointer;
 
-  &:hover,
-  &:active {
-    opacity: 0.3;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: $color-default-black;
+    box-shadow: 0 7.5px 0 0 $color-default-black,
+      0 15.5px 0 0 $color-default-black;
   }
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.header__burger--closed::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 1.5px;
-  background-color: $color-default-black;
-  box-shadow: 0 7.5px 0 0 $color-default-black,
-    0 15.5px 0 0 $color-default-black;
-}
-
-.header__burger--opened {
-  &::before,
   &::after {
+    display: none;
     content: "";
     position: absolute;
     left: 0;
@@ -213,12 +207,35 @@
     background-color: #000000;
   }
 
-  &::before {
+  .no-js & {
+    display: none;
+  }
+
+  .is-open &::before {
+    top: 10px;
     transform: rotate(45deg);
     box-shadow: none;
   }
 
-  &::after {
+  .is-open &::after {
+    display: block;
     transform: rotate(-45deg);
+  }
+
+  .is-open & {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -103,11 +103,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    max-width: 440px;
+    max-width: 425px;
     color: $color-default-black;
     grid-area: title;
     margin-bottom: 41px;
     text-align: left;
+    z-index: 1;
   }
 }
 
@@ -126,6 +127,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 49px;
+    max-width: 283px;
   }
 }
 
