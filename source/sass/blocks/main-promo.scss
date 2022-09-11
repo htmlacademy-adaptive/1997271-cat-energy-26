@@ -5,23 +5,24 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-default-white;
+    padding-top: 48px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 106px;
-    margin-bottom: 278px;
+    padding-top: 91px;
+    margin-bottom: 267px;
     position: static;
   }
 }
 
 .main-promo__wrapper {
   display: grid;
-  grid-template-columns: 1fr;
   justify-items: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
+    padding-left: 118px;
     justify-items: start;
     grid-template-areas:
       "title"
@@ -35,34 +36,58 @@
     justify-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "title image"
-      "slogan image"
-      "button image";
+      "title"
+      "slogan"
+      "button";
   }
 }
 
-.main-promo--background::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 302px;
-  top: 0;
-  background-color: $color-apple;
-  background-image: linear-gradient(
-      hsl(97 53% 47% / 85%),
-      hsl(97 53% 47% / 85%)
-    ),
-    url("../img/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-
-  @media (min-width: $desktop-width) {
-    width: 50%;
-    height: 27%;
-    right: 0;
+.main-promo--background {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
     top: 0;
-    z-index: 0;
+    background-color: $color-apple;
+    background-image: linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          hsl(97 53% 47% / 85%),
+          hsl(97 53% 47% / 85%)
+        ),
+        url("../img/index-background-mobile@2x.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: linear-gradient(
+          hsl(97 53% 47% / 85%),
+          hsl(97 53% 47% / 85%)
+        ),
+        url("../img/index-background-desktop.jpg");
+
+      width: 50%;
+      height: 694px;
+      right: 0;
+      top: 0;
+      z-index: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            hsl(97 53% 47% / 85%),
+            hsl(97 53% 47% / 85%)
+          ),
+          url("../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 }
 
@@ -78,11 +103,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    max-width: 440px;
+    max-width: 425px;
     color: $color-default-black;
     grid-area: title;
     margin-bottom: 41px;
     text-align: left;
+    z-index: 1;
   }
 }
 
@@ -101,14 +127,17 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 49px;
+    max-width: 283px;
   }
 }
 
 .main-promo__button {
+  padding: 10px 45px;
+
   @media (min-width: $tablet-width) {
     grid-area: button;
     max-width: 244px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -116,6 +145,18 @@
 
 .main-promo__image {
   @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
     grid-area: image;
+    margin-top: -83px;
+    margin-left: -89px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    margin-top: -83px;
+    margin-left: -202px;
   }
 }

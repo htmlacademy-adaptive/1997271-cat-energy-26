@@ -7,7 +7,14 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 11px;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active {
+    color: rgba($color-default-white, 0.3);
+  }
 }

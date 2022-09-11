@@ -1,5 +1,15 @@
 .guide {
-  margin-bottom: 49px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 63px;
+    border: none;
+  }
 }
 
 .guide__title {
@@ -7,13 +17,17 @@
   padding: 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
-  margin-bottom: 40px;
+  line-height: 1.11;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
     margin-bottom: 72px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
   }
 }
 
@@ -25,23 +39,103 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 58px;
+    row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
+    column-gap: 79px;
   }
 }
 
 .guide__item {
-  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  counter-increment: guide-counter;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    align-items: flex-start;
+    gap: 31px;
+    padding-top: 12%;
+    padding-bottom: 20%;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 112px;
+      content: counter(guide-counter);
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 1;
+      color: $color-white-smoke;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17%;
+    padding-bottom: 25%;
+  }
 }
 
 .guide__description {
+  flex-basis: 71%;
   margin: 0;
   padding: 0;
   color: $color-charcoal;
   font-family: $Arial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+  }
+}
+
+.guide__picture {
+  width: 60px;
+  height: 60px;
+  background-color: $color-apple;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.guide__picture--leaf {
+  background-image: url("../img/icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.guide__picture--tub {
+  background-image: url("../img/icon_tub.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.guide__picture--eat {
+  background-image: url("../img/icon_eat.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.guide__picture--alarm {
+  background-image: url("../img/icon_alarm.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
