@@ -2,12 +2,12 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $color-whisper;
     padding-bottom: 5%;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 63px;
+    padding-bottom: 64px;
     border: none;
   }
 }
@@ -23,7 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {

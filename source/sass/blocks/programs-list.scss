@@ -2,7 +2,7 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 }
 
@@ -127,7 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
     padding-left: 162px;
   }
 }
@@ -135,10 +135,10 @@
 .programs-list__specification {
   margin: 0;
   padding: 0;
-  color: #444444;
+  color: $color-charcoal;
   padding-bottom: 21px;
   font-family: $Arial;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-gainsboro;
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {

@@ -6,7 +6,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     padding-bottom: 100px;
-    background-image: linear-gradient(to bottom, #ffffff 619px, #f2f2f2 0);
+    background-image: linear-gradient(
+      to bottom,
+      $color-default-white 619px,
+      $color-white-smoke 0
+    );
   }
 
   @media (min-width: $desktop-width) {
@@ -121,7 +125,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-very-light-grey;
   padding: 14px 18px 15px;
   border-radius: 3px;
   position: relative;
@@ -154,7 +158,7 @@
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 1;
-  color: #444444;
+  color: $color-charcoal;
   position: absolute;
   left: 0;
   right: 0;
@@ -163,7 +167,7 @@
   display: inline-block;
   width: calc(100% - 36px);
   transform: translateY(100%);
-  background-color: #f2f2f2;
+  background-color: $color-white-smoke;
   text-align: center;
 
   @media (min-width: $tablet-width) {
