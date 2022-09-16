@@ -222,7 +222,7 @@
 
 .additional-products__gift {
   position: relative;
-  background-image: url("../img/catalog/gift.png");
+  background-image: url("../img/background/gift-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $color-apple;
@@ -234,6 +234,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/gift-mobile@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -255,20 +259,28 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/catalog/gift-tablet.jpg");
+    background-image: url("../img/background/gift-tablet.jpg");
     min-height: 200px;
     align-items: center;
     justify-content: flex-end;
     padding: 41px 125px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/catalog/gifit-desktop.jpg");
+    background-image: url("../img/background/gift-desktop.jpg");
     min-height: 289px;
     align-content: flex-end;
     justify-content: flex-end;
     padding: 41px;
     min-width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-desktop@2x.jpg");
+    }
   }
 }
 
