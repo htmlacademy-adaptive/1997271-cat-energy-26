@@ -44,7 +44,7 @@
                 <a
                   class="header__nav-link header__nav-link--current"
                   href="index.html"
-                  >Главня</a
+                  >Главная</a
                 >
               </li>
               <li class="header__nav-item">
@@ -69,6 +69,22 @@
           <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
             <source
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/index-can-desktop.webp,
+                ./img/index-can-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./img/index-can-tablet.webp,
+                ./img/index-can-tablet@2x.webp 2x
+              "
+            />
+            <source
               media="(min-width: 1024px)"
               srcset="
                 ./img/index-can-desktop.png,
@@ -82,9 +98,15 @@
                 ./img/index-can-tablet@2x.png 2x
               "
             />
+            <source
+              srcset="
+                ./img/index-can-mobile.webp,
+                ./img/index-can-mobile@2x.webp 2x
+              "
+            />
             <img
               class="main-promo__image"
-              src="./img/index-can-mobile.png,"
+              src="./img/index-can-mobile.png"
               srcset="./img/index-can-mobile@2x.png 2x"
               alt="Промо Cat Energy Куриный."
               width="280"
@@ -234,6 +256,12 @@
                       ./img/cat-fat-tablet@2x.png 2x
                     "
                   />
+                  <source
+                    srcset="
+                      ./img/cat-fat-mobile.webp    1x,
+                      ./img/cat-fat-mobile@2x.webp 2x
+                    "
+                  />
                   <img
                     class="example__demo-images example__demo-images--fat"
                     src="./img/cat-fat-mobile.png"
@@ -266,6 +294,12 @@
                     srcset="
                       ./img/cat-skiny-tablet.png,
                       ./img/cat-skiny-tablet@2x.png 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./img/cat-skiny-mobile.webp    1x,
+                      ./img/cat-skiny-mobile@2x.webp 2x
                     "
                   />
                   <img
@@ -325,14 +359,22 @@
           </a>
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#" aria-label="Мы Вконтакте">
+              <a
+                class="footer__social-link"
+                href="https://vk.com/htmlacademy"
+                aria-label="Мы Вконтакте"
+              >
                 <svg width="28" fill="#666" height="22">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#" aria-label="Мы в Ютуб">
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="Мы в Ютуб"
+              >
                 <svg width="28" height="22" fill="#666">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
@@ -341,7 +383,7 @@
             <li class="footer__social-item">
               <a
                 class="footer__social-link"
-                href="#"
+                href="tg://resolve?domain=htmlacademy"
                 aria-label="Мы в Телеграмм"
               >
                 <svg width="28" height="22" fill="#666">
