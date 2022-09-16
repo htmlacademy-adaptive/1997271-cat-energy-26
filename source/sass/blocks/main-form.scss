@@ -327,8 +327,12 @@
 }
 
 .main-form__row-icon-phone {
-  position: absolute;
   right: 14px;
+  position: absolute;
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }
 
 .main-form__contacts-input {
