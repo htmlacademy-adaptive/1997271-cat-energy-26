@@ -5,7 +5,7 @@ import postcss from "gulp-postcss";
 import csso from "postcss-csso";
 import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
-import browser, { reload } from "browser-sync";
+import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
@@ -56,7 +56,7 @@ const copyImages = () => {
 
 //Webp
 
-export const createWebp = () => {
+const createWebp = () => {
   return gulp
     .src([
       "source/img/**/*.{jpg,png}",
@@ -69,14 +69,14 @@ export const createWebp = () => {
 
 //SVG
 
-export const svg = () => {
+const svg = () => {
   return gulp
     .src(["source/img/*.svg", "!source/img/icons/*.svg"])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
 };
 
-export const sprite = () => {
+const sprite = () => {
   return gulp
     .src("source/img/icons/*.svg")
     .pipe(svgo())
@@ -87,7 +87,7 @@ export const sprite = () => {
 
 //Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp
     .src(
       ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
@@ -99,7 +99,7 @@ export const copy = (done) => {
 
 //Clean
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync("build");
 };
 
@@ -114,6 +114,13 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
+  done();
+};
+
+//Reload
+
+const reload = (done) => {
+  browser.reload();
   done();
 };
 
