@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
@@ -69,6 +69,22 @@
           <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
             <source
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/index-can-desktop.webp,
+                ./img/index-can-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./img/index-can-tablet.webp,
+                ./img/index-can-tablet@2x.webp 2x
+              "
+            />
+            <source
               media="(min-width: 1024px)"
               srcset="
                 ./img/index-can-desktop.png,
@@ -80,6 +96,13 @@
               srcset="
                 ./img/index-can-tablet.png,
                 ./img/index-can-tablet@2x.png 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./img/index-can-mobile.webp,
+                ./img/index-can-mobile@2x.webp 2x
               "
             />
             <img
@@ -234,6 +257,13 @@
                       ./img/cat-fat-tablet@2x.png 2x
                     "
                   />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/cat-fat-mobile.webp    1x,
+                      ./img/cat-fat-mobile@2x.webp 2x
+                    "
+                  />
                   <img
                     class="example__demo-images example__demo-images--fat"
                     src="./img/cat-fat-mobile.png"
@@ -266,6 +296,13 @@
                     srcset="
                       ./img/cat-skiny-tablet.png,
                       ./img/cat-skiny-tablet@2x.png 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/cat-skiny-mobile.webp    1x,
+                      ./img/cat-skiny-mobile@2x.webp 2x
                     "
                   />
                   <img
@@ -325,14 +362,22 @@
           </a>
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#" aria-label="Мы Вконтакте">
+              <a
+                class="footer__social-link"
+                href="https://vk.com/htmlacademy"
+                aria-label="Мы Вконтакте"
+              >
                 <svg width="28" fill="#666" height="22">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#" aria-label="Мы в Ютуб">
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="Мы в Ютуб"
+              >
                 <svg width="28" height="22" fill="#666">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
@@ -341,7 +386,7 @@
             <li class="footer__social-item">
               <a
                 class="footer__social-link"
-                href="#"
+                href="tg://resolve?domain=htmlacademy"
                 aria-label="Мы в Телеграмм"
               >
                 <svg width="28" height="22" fill="#666">

@@ -8,11 +8,7 @@
   &:hover {
     border-color: $color-very-light-grey;
 
-    + .main-form__row-icon-email svg {
-      stroke: $color-apple;
-    }
-
-    + .main-form__row-icon-phone svg {
+    + .main-form__row-icon svg {
       fill: $color-apple;
     }
   }
@@ -21,11 +17,7 @@
     box-shadow: inset 0 0 0 2px $color-charcoal;
     outline: none;
 
-    + .main-form__row-icon-email svg {
-      stroke: $color-apple;
-    }
-
-    + .main-form__row-icon-phone svg {
+    + .main-form__row-icon svg {
       fill: $color-apple;
     }
   }
@@ -36,11 +28,7 @@
     box-shadow: inset 0 0 0 2px $color-light-coral;
     outline: none;
 
-    + .main-form__row-icon-email svg {
-      stroke: $color-light-coral;
-    }
-
-    + .main-form__row-icon-phone svg {
+    + .main-form__row-icon svg {
       fill: $color-light-coral;
     }
   }

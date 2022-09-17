@@ -299,10 +299,6 @@
   flex-shrink: 0;
 }
 
-.main-form__icon-email {
-  stroke: $color-nero;
-}
-
 .main-form__contacts-label {
   text-transform: uppercase;
   font-size: 16px;
@@ -331,8 +327,12 @@
 }
 
 .main-form__row-icon-phone {
-  position: absolute;
   right: 14px;
+  position: absolute;
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }
 
 .main-form__contacts-input {

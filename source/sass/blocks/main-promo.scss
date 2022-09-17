@@ -54,7 +54,7 @@
         hsl(97 53% 47% / 85%),
         hsl(97 53% 47% / 85%)
       ),
-      url("../img/index-background-mobile.jpg");
+      url("../img/background/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -64,7 +64,7 @@
           hsl(97 53% 47% / 85%),
           hsl(97 53% 47% / 85%)
         ),
-        url("../img/index-background-mobile@2x.jpg");
+        url("../img/background/index-background-mobile@2x.jpg");
     }
 
     @media (min-width: $desktop-width) {
@@ -72,7 +72,7 @@
           hsl(97 53% 47% / 85%),
           hsl(97 53% 47% / 85%)
         ),
-        url("../img/index-background-desktop.jpg");
+        url("../img/background/index-background-desktop.jpg");
 
       width: 50%;
       height: 694px;
@@ -85,7 +85,7 @@
             hsl(97 53% 47% / 85%),
             hsl(97 53% 47% / 85%)
           ),
-          url("../img/index-background-desktop@2x.jpg");
+          url("../img/background/index-background-desktop@2x.jpg");
       }
     }
   }

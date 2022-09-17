@@ -118,7 +118,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/catalog/plus-mobile.svg");
+    background-image: url("../img/plus-mobile.svg");
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -127,7 +127,7 @@
     transform: translateX(-50%) translateZ(0);
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/catalog/plus-tablet.svg");
+      background-image: url("../img/plus-tablet.svg");
       width: 60px;
       height: 60px;
       top: 47px;

@@ -1,16 +1,12 @@
 .footer {
   margin-top: auto;
-  padding-top: 36px;
+  padding-top: 38px;
   padding-bottom: 22px;
   background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 60px;
     padding-bottom: 51px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 57px;
   }
 }
 
@@ -20,20 +16,19 @@
 }
 
 .footer__social-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__social-item {
-  padding: 17px 12px 18px 11px;
+  max-width: 156px;
 
   @media (min-width: $tablet-width) {
-    padding: 6px 16px 10px 9px;
+    width: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
   }
 }
 
@@ -86,7 +81,7 @@
 
 .footer__logo-link {
   display: block;
-  padding-bottom: 28px;
+  padding-bottom: 31px;
   margin: 0 auto;
   border-bottom: 1px solid $color-gainsboro;
   text-align: center;
@@ -119,7 +114,23 @@
   }
 }
 
+.footer__social-item {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+  }
+}
+
 .footer__social-link {
+  display: block;
+  width: 28px;
+  height: 22px;
+
   &:hover {
     svg {
       fill: $color-apple;

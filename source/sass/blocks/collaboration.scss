@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 40px 61px 40px;
+    padding: 59px 40px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,27 +81,39 @@
 
 .collaboration__map {
   display: block;
-  background-image: url("../img/map.png");
+  background-image: url("../img/background/location.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 362px;
+  min-height: 362px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/location@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/map-tablet.png");
-    height: 400px;
+    background-image: url("../img/background/location-tablet.jpg");
+    min-height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/location-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/map-desktop.png");
+    background-image: url("../img/background/location-desktop.jpg");
     position: absolute;
     top: 0;
     width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/location-desktop@2x.jpg");
+    }
   }
 }
 
 .collaboration__iframe {
   border: none;
-  max-height: 362px;
+  height: 362px;
   display: block;
 
   @media (min-width: $tablet-width) {
