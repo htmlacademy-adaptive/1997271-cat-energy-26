@@ -104,17 +104,16 @@
   color: $color-charcoal;
   font-family: $Arial;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     flex-basis: 80%;
     font-size: 16px;
     line-height: 1.5;
 
-    br {
-      display: block;
+    span {
+      &::after {
+        content: "\A";
+      }
+      white-space: pre;
     }
   }
 

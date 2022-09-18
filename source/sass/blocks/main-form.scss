@@ -112,14 +112,6 @@
   @media (min-width: $desktop-width) {
     padding: 10px 16px;
   }
-
-  &:hover {
-    border-color: $color-very-light-grey;
-  }
-
-  &:focus {
-    border: 2px solid $color-charcoal;
-  }
 }
 
 .main-form__question {
@@ -314,6 +306,10 @@
     line-height: 30px;
     gap: 0 20px;
   }
+}
+
+.main-form__row-icon {
+  pointer-events: none;
 }
 
 .main-form__row-icon-email {
