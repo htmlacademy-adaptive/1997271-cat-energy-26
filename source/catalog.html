@@ -9,9 +9,24 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple-icon.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
+    <!--Для меню с отключенным js добавить класс no-js-->
     <header class="header no-js">
       <div class="container">
         <div class="header__wrapper">
@@ -185,7 +200,7 @@
                       "
                     />
                     <img
-                      class="product__image"
+                      class="product__image product__image--big"
                       src="./img/catalog/catalog-сhicken-mobile-big.png"
                       srcset="
                         ./img/catalog/catalog-сhicken-mobile-big@2x.png 2x
@@ -333,7 +348,7 @@
                       "
                     />
                     <img
-                      class="product__image product__image--big"
+                      class="product__image"
                       src="./img/catalog/catalog-fish-mobile-big.png"
                       srcset="./img/catalog/catalog-fish-mobile-big@2x.png 2x"
                       alt="Cat Energy Pro Рыбный."
@@ -479,7 +494,7 @@
                       "
                     />
                     <img
-                      class="product__image product__image--big"
+                      class="product__image"
                       src="./img/catalog/catalog-buckwheat-mobile-big.png"
                       srcset="
                         ./img/catalog/catalog-buckwheat-mobile-big@2x.png 2x
@@ -691,8 +706,6 @@
             class="collaboration__iframe"
             title="Карта где мы находимся."
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253329!2d30.32085871604706!3d59.93871648187612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660236203902!5m2!1sru!2sru"
-            width="100%"
-            height="400"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -719,7 +732,7 @@
                 href="https://vk.com/htmlacademy"
                 aria-label="Мы Вконтакте"
               >
-                <svg width="28" fill="#666" height="22">
+                <svg width="28" fill="#666" height="22" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -730,7 +743,7 @@
                 href="https://www.youtube.com/user/htmlacademyru"
                 aria-label="Мы в Ютуб"
               >
-                <svg width="28" height="22" fill="#666">
+                <svg width="28" height="22" fill="#666" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -741,16 +754,19 @@
                 href="tg://resolve?domain=htmlacademy"
                 aria-label="Мы в Телеграмм"
               >
-                <svg width="28" height="22" fill="#666">
+                <svg width="28" height="22" fill="#666" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
           </ul>
           <div class="footer__developer-copyright">
-            <a class="footer__developer-link" href="https://up.htmlacademy.ru">
+            <a
+              class="footer__developer-link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
               <span class="footer__developer-title">HTML Academy</span>
-              <svg width="27" height="34" fill="#666">
+              <svg width="27" height="34" fill="#666" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-html"></use>
               </svg>
             </a>
