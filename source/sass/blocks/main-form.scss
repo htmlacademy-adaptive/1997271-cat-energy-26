@@ -11,6 +11,11 @@
   }
 }
 
+.main-form--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .main-form__title {
   margin: 0;
   margin-bottom: 37px;
