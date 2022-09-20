@@ -132,12 +132,12 @@
 }
 
 .main-promo__button {
-  padding: 10px 45px;
+  padding: 10px;
 
   @media (min-width: $tablet-width) {
     grid-area: button;
     max-width: 244px;
-    padding: 17px 26px;
+    padding: 17px;
     font-size: 20px;
     line-height: 20px;
   }

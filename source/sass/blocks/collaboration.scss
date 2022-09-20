@@ -1,3 +1,13 @@
+.collaboration {
+  background-color: $color-default-white;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 107px;
+  }
+}
+
 .collaboration__item {
   padding: 26px 0;
   display: flex;
@@ -14,10 +24,6 @@
     z-index: 2;
     padding: 54px 74px 60px 80px;
   }
-}
-
-.collaboration {
-  background-color: $color-default-white;
 }
 
 .collaboration__title {
@@ -66,17 +72,7 @@
   }
 }
 
-.collaboration__wrapper {
-  position: relative;
-  background-color: $color-default-white;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 95px;
-    padding-bottom: 107px;
-  }
-}
-
-.collaboration__wrapper--grey {
+.collaboration--grey {
   background-color: $color-white-smoke;
 }
 

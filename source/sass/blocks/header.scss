@@ -60,12 +60,25 @@
 
   .is-open & {
     display: block;
+    position: absolute;
+    background-color: $color-default-white;
+    top: 51px;
+    z-index: 99;
+    margin-left: -20px;
+    width: 100vw;
   }
 
   @media (min-width: $tablet-width) {
     width: 70%;
     display: block;
     margin: 0;
+
+    .is-open & {
+      display: block;
+      position: static;
+      background-color: transparent;
+      width: 70%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -98,9 +111,13 @@
   padding-top: 22px;
   padding-bottom: 24px;
   border-top: 1px solid $color-whisper;
-  margin-left: -20px;
-  margin-right: -20px;
   position: relative;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  .is-open & {
+    margin: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

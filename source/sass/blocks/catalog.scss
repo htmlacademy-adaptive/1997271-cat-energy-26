@@ -17,6 +17,11 @@
   }
 }
 
+.catalog__more-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog__title {
   margin: 0;
   margin-bottom: 41px;
@@ -85,6 +90,7 @@
   padding: 10px;
   background-color: $color-white-smoke;
   color: $color-charcoal;
+  margin-top: auto;
 
   &:hover {
     background-color: $color-whisper-dark;
@@ -156,7 +162,7 @@
 
 .catalog__subtitle-more {
   margin: 0;
-  font-family: $Arial;
+  font-family: $arial;
   font-size: 12px;
   text-align: center;
   margin-bottom: 21px;
