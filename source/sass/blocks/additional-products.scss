@@ -177,6 +177,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-right: 15px;
     font-size: 20px;
     line-height: 1;
   }
@@ -188,7 +189,7 @@
 
 .additional-products__unit {
   margin: 0;
-  font-family: $Arial;
+  font-family: $arial;
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
@@ -229,7 +230,7 @@
   background-position: center;
   width: 100%;
   min-height: 290px;
-  padding: 41px 57px;
+  padding: 180px 57px 41px 57px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -245,7 +246,7 @@
     width: 78px;
     height: 80px;
     top: 59px;
-    background-image: url("../img/icon_gift.svg");
+    background-image: url("../img/icon-gift.svg");
 
     @media (min-width: $tablet-width) {
       top: 57px;
@@ -275,7 +276,7 @@
     min-height: 289px;
     align-content: flex-end;
     justify-content: flex-end;
-    padding: 41px;
+    padding: 180px 41px 41px 41px;
     min-width: 245px;
 
     @media (min-resolution: 2dppx) {
@@ -286,7 +287,7 @@
 
 .additional-products__description {
   margin: 0;
-  font-family: $Arial;
+  font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -306,7 +307,7 @@
 }
 
 .additional-products__price {
-  font-family: $Arial;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1;
 
