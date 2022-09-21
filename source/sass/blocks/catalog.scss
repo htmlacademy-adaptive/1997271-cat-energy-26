@@ -20,6 +20,7 @@
 .catalog__more-info {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .catalog__title {
@@ -115,6 +116,8 @@
     padding: 159px 11% 35px 11%;
     background-color: $color-default-white;
     border: 2px solid $color-white-smoke;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -166,6 +169,7 @@
   font-size: 12px;
   text-align: center;
   margin-bottom: 21px;
+  color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
