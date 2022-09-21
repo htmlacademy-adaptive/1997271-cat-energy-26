@@ -208,6 +208,12 @@
   }
 }
 
+.main-form__question-input:focus {
+  ~ .main-form__control {
+    border-color: $color-charcoal;
+  }
+}
+
 .main-form__contacts {
   margin-bottom: 22px;
 
@@ -525,6 +531,12 @@
       width: 26px;
       height: 26px;
     }
+  }
+}
+
+.main-form__supplemental-input:focus {
+  ~ .main-form__supplemental-control {
+    border-color: $color-charcoal;
   }
 }
 

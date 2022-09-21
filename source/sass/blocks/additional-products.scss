@@ -175,6 +175,7 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+  color: $color-nero;
 
   @media (min-width: $tablet-width) {
     padding-right: 15px;
@@ -191,6 +192,7 @@
   margin: 0;
   font-family: $arial;
   line-height: 14px;
+  color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -310,6 +312,7 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 1;
+  color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

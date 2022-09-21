@@ -64,22 +64,13 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 53px;
-
-    span {
-      &::after {
-        content: "\A";
-      }
-      white-space: pre-wrap;
-    }
+    padding-right: 6px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
     max-width: 436px;
-
-    span {
-      white-space: normal;
-    }
+    padding-right: 0;
   }
 }
 
